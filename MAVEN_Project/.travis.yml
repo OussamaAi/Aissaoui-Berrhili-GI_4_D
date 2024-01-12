@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - openjdk11
+
+# Avant d'installer les dépendances, assurez-vous que le projet est construit avec Maven
+before_install:
+  - chmod +x mvnw
+
+# Commande pour exécuter les tests
+script:
+  - ./mvnw test
